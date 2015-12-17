@@ -1,3 +1,5 @@
+/.idea
+/ASSEMBLY-PEP.iml
 *.class
 
 # Mobile Tools for Java (J2ME)

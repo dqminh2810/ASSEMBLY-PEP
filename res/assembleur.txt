@@ -1,0 +1,16 @@
+# _start:
+adr R2,chaine
+boucle: ldrb R3,[R2]
+cmp R3,#0
+               beq fin
+               cmp R3,#'a'
+               blt inc
+               cmp R3,#'z'
+               bgt inc
+               sub R3,R3,#0x20
+               strb R3,[R2]
+inc: add R2,R2,#1 b boucle
+fin:
+.ltorg
+chaine: .asciz "Ah que, qui je suis ?"
+.end
