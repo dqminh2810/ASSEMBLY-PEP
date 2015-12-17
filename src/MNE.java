@@ -1,4 +1,5 @@
 import mne.Add;
+import mne.Cmp;
 import mne.Mne;
 
 /**
@@ -16,7 +17,7 @@ public enum MNE {
     SBC("0100000110"),
     ROR("0100000111"),
     TST("0100001000"),
-    CMP("0100001010"),
+    CMP(Cmp.class),
     CMN("0100001011"),
     ORR("0100001100"),
     BIC("0100001110"),
