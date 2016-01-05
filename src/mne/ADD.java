@@ -10,7 +10,7 @@ public class ADD extends Mne {
     public String parse(String mne, String opt) {
         String finalHex=associatedMne;
 
-        finalHex=finalHex+this.parseOpts(opt.split(","));
+        finalHex=finalHex+this.parseOpts(opt);
 
         return finalHex;
     }
