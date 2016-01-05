@@ -1,9 +1,9 @@
 package mne;
 
-/**
- * ASSEMBLY-PEP created on 17/12/2015 by Keynes Timothy - Aloysius_tim
- */
-public class ROR extends Mne{
+import mne.Mne;
+
+
+public class ROR extends Mne {
     private final String associatedMne="0100000111";
 
     @Override
@@ -11,7 +11,6 @@ public class ROR extends Mne{
         String finalHex=associatedMne;
 
         finalHex=finalHex+this.parseOpts(opt);
-
         return finalHex;
     }
 }

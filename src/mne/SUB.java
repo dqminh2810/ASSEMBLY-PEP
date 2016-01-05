@@ -1,8 +1,8 @@
 package mne;
 
-/**
- * ASSEMBLY-PEP created on 17/12/2015 by Keynes Timothy - Aloysius_tim
- */
+import mne.Mne;
+
+
 public class SUB extends Mne {
     private final String associatedMne="0001101";
 
@@ -11,7 +11,6 @@ public class SUB extends Mne {
         String finalHex=associatedMne;
 
         finalHex=finalHex+this.parseOpts(opt);
-
         return finalHex;
     }
 }
