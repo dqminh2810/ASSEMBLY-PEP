@@ -1,12 +1,10 @@
 package mne;
 
-import java.util.Arrays;
+import mne.Mne;
 
-/**
- * PEP created on 17/12/2015 by Keynes Timothy - Aloysius_tim
- */
-public class Add extends Mne {
-    private final String associatedMne="0001100";
+
+public class EOR extends Mne {
+    private final String associatedMne="0100000001";
 
     @Override
     public String parse(String mne, String opt) {

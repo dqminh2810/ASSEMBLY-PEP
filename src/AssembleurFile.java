@@ -27,9 +27,9 @@ public class AssembleurFile {
                 String mne=s.next();
                 String opt=s.next();
 
-                System.out.println("Line " + r.getLineNumber() + ": " + mne);
+                System.out.println("Line " + r.getLineNumber() + ": " + mne +" "+opt);
 
-                write(((Mne)MNE.valueOf(mne.toUpperCase()).getAssociatedClass().newInstance()).parse(mne, opt));
+                write(((Mne)MNE.valueOf(mne.toUpperCase()).getAssociatedClass().newInstance()).parse(mne,opt));
             }
         }
     }

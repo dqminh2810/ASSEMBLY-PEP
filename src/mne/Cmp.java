@@ -8,10 +8,10 @@ public class Cmp extends Mne {
 
     @Override
     public String parse(String mne, String opt) {
-        String[] tab=opt.split(",");
+    	  String finalHex=associatedMne;
 
-        System.out.println(tab.toString());
+          finalHex=finalHex+this.parseOpts(opt.split(","));
 
-        return null;
+          return finalHex;
     }
 }

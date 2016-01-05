@@ -1,35 +1,59 @@
-import mne.Add;
+import mne.ADD;
+import mne.SUB;
+import mne.AND;
+import mne.EOR;
+import mne.LSL;
+import mne.LSR;
+import mne.ASR;
+import mne.ADC;
+import mne.SBC;
+import mne.ROR;
+import mne.TST;
 import mne.Cmp;
+import mne.CMN;
+import mne.ORR;
+import mne.BIC;
+import mne.MVN;
+import mne.STR;
+import mne.STRH;
+import mne.STRB;
+import mne.LDRSB;
+import mne.LDR;
+import mne.LDRH;
+import mne.LDRB;
+import mne.LDRSH;
+
+
+
 import mne.Mne;
 
 /**
  * PEP created on 17/12/2015 by Keynes Timothy - Aloysius_tim
  */
 public enum MNE {
-    ADD(Add.class),
-    SUB("0001101"),
-    AND("0100000000"),
-    EOR("0100000001"),
-    LSL("0100000010"),
-    LSR("0100000011"),
-    ASR("0100000100"),
-    ADC("0100000101"),
-    SBC("0100000110"),
-    ROR("0100000111"),
-    TST("0100001000"),
+    ADD(ADD.class),
+    SUB(SUB.class),
+    AND(AND.class),
+    EOR(EOR.class),
+    LSL(LSL.class),
+    LSR(LSR.class),
+    ASR(ASR.class),
+    ADC(ADC.class),
+    ROR(ROR.class),
+    TST(TST.class),
     CMP(Cmp.class),
-    CMN("0100001011"),
-    ORR("0100001100"),
-    BIC("0100001110"),
-    MVN("0100001111"),
-    STR("0101000"),
-    STRH("0101001"),
-    STRB("0101010"),
-    LDRSB("0101011"),
-    LDR("0101100"),
-    LDRH("0101101"),
-    LDRB("0101110"),
-    LDRSH("0101111");
+    CMN(CMN.class),
+    ORR(ORR.class),
+    BIC(BIC.class),
+    MVN(MVN.class),
+    STR(STR.class),
+    STRH(STRH.class),
+    STRB(STRB.class),
+    LDRSB(LDRSB.class),
+    LDR(LDR.class),
+    LDRH(LDRH.class),
+    LDRB(LDRB.class),
+    LDRSH(LDRSH.class);
 
     private String hex;
     MNE(String s) {
