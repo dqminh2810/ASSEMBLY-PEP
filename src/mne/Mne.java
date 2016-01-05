@@ -20,6 +20,7 @@ public abstract class Mne {
             		finalHex=finalHex+RegisterADD;
             	}else{
     				System.out.println("ERROR RegisterADD!!!");
+    				System.exit(0);
             	}
             }else if (operande.startsWith("#")){
                 finalHex=finalHex+Integer.toBinaryString(12);

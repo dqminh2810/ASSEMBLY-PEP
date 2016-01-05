@@ -29,7 +29,7 @@ public class AssembleurFile {
 
                 System.out.println("Line " + r.getLineNumber() + ": " + mne +" "+opt);
 
-                write(((Mne)MNE.valueOf(mne.toUpperCase()).getAssociatedClass().newInstance()).parse(mne,opt));
+                write(((Mne)MNE.valueOf(mne).getAssociatedClass().newInstance()).parse(mne,opt));
             }
         }
     }
