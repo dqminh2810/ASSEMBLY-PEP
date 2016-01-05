@@ -1,9 +1,9 @@
 package mne;
 
-import mne.Mne;
-
-
-public class ADC extends Mne {
+/**
+ * ASSEMBLY-PEP created on 17/12/2015 by Keynes Timothy - Aloysius_tim
+ */
+public class ADC extends Mne{
     private final String associatedMne="0100000101";
 
     @Override

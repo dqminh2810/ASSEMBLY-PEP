@@ -1,45 +1,18 @@
-import mne.ADD;
-import mne.SUB;
-import mne.AND;
-import mne.EOR;
-import mne.LSL;
-import mne.LSR;
-import mne.ASR;
-import mne.ADC;
-import mne.SBC;
-import mne.ROR;
-import mne.TST;
-import mne.Cmp;
-import mne.CMN;
-import mne.ORR;
-import mne.BIC;
-import mne.MVN;
-import mne.STR;
-import mne.STRH;
-import mne.STRB;
-import mne.LDRSB;
-import mne.LDR;
-import mne.LDRH;
-import mne.LDRB;
-import mne.LDRSH;
-
-
-
-import mne.Mne;
+import mne.*;
 
 /**
  * PEP created on 17/12/2015 by Keynes Timothy - Aloysius_tim
  */
 public enum MNE {
     ADD(ADD.class),
-    SUB(SUB.class),
-    AND(AND.class),
-    EOR(EOR.class),
-    LSL(LSL.class),
-    LSR(LSR.class),
-    ASR(ASR.class),
-    ADC(ADC.class),
-    ROR(ROR.class),
+    SUB(Sub.class),
+    AND(And.class),
+    EOR(Eor.class),
+    LSL(Lsl.class),
+    LSR(Lsr.class),
+    ASR(Asr.class),
+    ADC(Adc.class),
+    ROR(Ror.class),
     TST(TST.class),
     CMP(Cmp.class),
     CMN(CMN.class),
